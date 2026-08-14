@@ -6,5 +6,8 @@ def matrix_trace(A):
     """
     # Write code here
     A = np.array(A)
-    return np.trace(A)
+    total = 0
+    for i in range(A.shape[0]):
+        total += A[i,i]
+    return total
     pass
