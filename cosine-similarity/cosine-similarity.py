@@ -9,13 +9,13 @@ def cosine_similarity(a, b):
     a = np.asarray(a)
     b = np.asarray(b)
 
-    A = np.linalg.norm(a)
-    B = np.linalg.norm(b)
+    na = np.linalg.norm(a)
+    nb = np.linalg.norm(b)
     result = np.dot(a,b)
 
-    if A == 0 or B == 0:
+    if na == 0 or nb == 0:
         return 0.0
         
-    return float(result/(A*B))
+    return float(result/(na*nb))
     
     pass
